@@ -4,6 +4,7 @@ public class ParamsDto {
 	
 	private String login;
 	private String connectionTime;
+	private String connectionTimeFormat;
 	
 	public ParamsDto() {
 		//  Auto-generated constructor stub
@@ -25,9 +26,16 @@ public class ParamsDto {
 		this.connectionTime = connectionTime;
 	}
 	
+	public String getConnectionTimeFormat() {
+		return connectionTimeFormat;
+	}
+
+	public void setConnectionTimeFormat(String connectionTimeFormat) {
+		this.connectionTimeFormat = connectionTimeFormat;
+	}
+
 	@Override
 	public String toString() {
-		// TODO Auto-generated method stub
-		return "[login:" + login + " - connectionTime: " + connectionTime + "]";
+		return "[login:" + login + " - connectionTime: " + connectionTime + " - connectionTimeFormat: " + connectionTimeFormat + "]";
 	}
 }
